@@ -8,7 +8,7 @@ configuration (usually **Mod+Shift+C**)
 
 These configurations use the following software/fonts/things:
 
-* [Kitty](https://sw.kovidgoyal.net/kitty/)
+* Alacritty
 * pavucontrol / pactl
 * swaylock
 * swayidle
