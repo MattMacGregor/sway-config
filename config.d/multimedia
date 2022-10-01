@@ -13,6 +13,9 @@ bindsym $mod+F6 exec playerctl next
 # Backlight
 # PLEASE NOTE: Light has a small issue with SUID, you should install the version
 # that allows the user to run it without SUID
+#
+# This entails cloning light from github, building with --with-udev, and then adding your user to
+# the "video" group with "sudo usermod -a -G video $LOGNAME"
 bindsym $mod+F9 exec light -U 10
 bindsym $mod+F10 exec light -A 10
 
