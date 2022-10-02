@@ -1,10 +1,9 @@
 # SwayWM multimedia keys configuration. For detailed information type "man sway"
 
 # Audio
-bindsym $mod+F1 exec pactl set-sink-mute `pactl list sinks short | grep RUNNING | awk '{print $1}'` toggle
-bindsym $mod+F2 exec pactl set-sink-volume `pactl list sinks short | grep RUNNING | awk '{print $1}'` -2%
-bindsym $mod+F3 exec pactl set-sink-volume `pactl list sinks short | grep RUNNING | awk '{print $1}'` +2%
-
+bindsym $mod+F1 exec pactl set-sink-mute `~/.config/sway/scripts/get-sink-of-type.sh Speaker` toggle
+bindsym $mod+F2 exec pactl set-sink-volume `~/.config/sway/scripts/get-sink-of-type.sh Speaker` -2%
+bindsym $mod+F3 exec pactl set-sink-volume `~/.config/sway/scripts/get-sink-of-type.sh Speaker` +2%
 # Media
 bindsym $mod+F4 exec playerctl previous
 bindsym $mod+F5 exec playerctl play-pause
