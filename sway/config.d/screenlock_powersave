@@ -4,7 +4,7 @@
 # Example configuration:
 #
 exec swayidle -w \
-    timeout 600 'swaylock -f -i $lockscreenbg' \
+    timeout 600 'swaylock -i $lockscreenbg --clock --indicator --indicator-radius 100 --indicator-thickness 7 --effect-blur 7x5 --effect-vignette 0.5:0.5' \
     timeout 900 'swaymsg "output * dpms off"' \
     resume 'swaymsg "output * dpms on"' \
     before-sleep 'swaylock -i $lockscreenbg --clock --indicator --indicator-radius 100 --indicator-thickness 7 --effect-blur 7x5 --effect-vignette 0.5:0.5'
