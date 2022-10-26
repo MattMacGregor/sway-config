@@ -10,7 +10,7 @@ These configurations use the following software/fonts/things:
 
 * Alacritty
 * pavucontrol / pactl
-* swaylock
+* [swaylock-effects]("https://github.com/mortie/swaylock-effects")
 * swayidle
 * swaybg
 * [rofi](https://github.com/davatorium/rofi) [Arch package](https://archlinux.org/packages/community/x86_64/rofi/)
