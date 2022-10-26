@@ -36,7 +36,9 @@ gaps outer 1
 #########################
 # Start a terminal
 bindsym $mod+Return exec $term
-
+# Start new terminal from cwd terminal
+# Supports tmux, fish, bash, zsh, sh
+bindsym $mod+Shift+Return exec ~/.config/sway/scripts/sway-cwd.sh
 # Kill focused window
 bindsym $mod+Shift+q kill
 
