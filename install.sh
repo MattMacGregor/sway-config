@@ -10,4 +10,4 @@ then
     mkdir ~/.config/sway
 fi
 
-cp -r "$DIR"/sway "$DIR"/gammastep "$DIR"/geoclue ~/.config/
+cp -r "$DIR"/sway "$DIR"/gammastep "$DIR"/geoclue "$DIR"/waybar ~/.config/
